@@ -19,13 +19,13 @@
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
-define('DB_NAME', 'paysageur_wp');
+define('DB_NAME', 'votre_nom_de_bdd');
 
 /** Utilisateur de la base de données MySQL. */
-define('DB_USER', 'root');
+define('DB_USER', 'votre_utilisateur_de_bdd');
 
 /** Mot de passe de la base de données MySQL. */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'votre_mdp_de_bdd');
 
 /** Adresse de l’hébergement MySQL. */
 define('DB_HOST', 'localhost');
@@ -49,14 +49,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         ';ys+pG(L3:2s]@TE)bP+[Jc8DA T{cL5xYN=_Cy!^(RS7+6fj-WZ@hmIrU5o05EI');
-define('SECURE_AUTH_KEY',  ' 4B04,o)?C%DBeW[.A6<|sDq6fx]{.fYpo`X4<|f~~Pw>oXB$#Ln:)WdH4g<{m>p');
-define('LOGGED_IN_KEY',    '7XP|UNHJMuAC%?)jj e:70k-_55W-[8yt1w]JEps=HCe]TnMw!^rLl)|%-Sp|i,A');
-define('NONCE_KEY',        '(4^HCS<dI,kod|_9}-YZ: $bSw^W}tuI%%; G{/|5+Ycalk%3cZ|i}C@D}=ENp/O');
-define('AUTH_SALT',        'jC+Yjo:9-HR7H_KAaLXN=]FPkB_=)aGTL0KcKg#1+$K04Wl,_X?mK9$xb:(CI/Hc');
-define('SECURE_AUTH_SALT', 'pAPG6[$ BlZ-Q%aN- y&G8dxh2MM+4|u`y_-;%SC#j${W75:w.=mgpPvT&KiWJ`r');
-define('LOGGED_IN_SALT',   '&q(WZcfZYE!Mw$L=!^?2hSg72Anek+?M=!78ZzA#V]aIeFF>PkS3f4IH3-KP6Vbp');
-define('NONCE_SALT',       'Yjw3q5@,5N`G#FKVQ`+DcPQ4P3iBa5b#p8a3yliu|wLrXWq+<+7+%XP}]1anc/0=');
+define('AUTH_KEY',         'put your unique phrase here');
+define('SECURE_AUTH_KEY',  'put your unique phrase here');
+define('LOGGED_IN_KEY',    'put your unique phrase here');
+define('NONCE_KEY',        'put your unique phrase here');
+define('AUTH_SALT',        'put your unique phrase here');
+define('SECURE_AUTH_SALT', 'put your unique phrase here');
+define('LOGGED_IN_SALT',   'put your unique phrase here');
+define('NONCE_SALT',       'put your unique phrase here');
 /**#@-*/
 
 /**
@@ -66,7 +66,7 @@ define('NONCE_SALT',       'Yjw3q5@,5N`G#FKVQ`+DcPQ4P3iBa5b#p8a3yliu|wLrXWq+<+7+
  * si vous leur donnez chacune un préfixe unique.
  * N’utilisez que des chiffres, des lettres non-accentuées, et des caractères soulignés !
  */
-$table_prefix  = 'pa_';
+$table_prefix  = 'wp_';
 
 /**
  * Pour les développeurs : le mode déboguage de WordPress.
