@@ -1,10 +1,14 @@
 <?php
+
+/*
+Ajout des customs post type dans la table de SQL
+*/
 add_action('init', 'tb_create_post_type');
 
 function tb_create_post_type()
 {
 
-  // définit le custom (post_type dans la table wp_posts MySQL)
+  // définir le custom_post_type
     register_post_type(
       'revue',
    [
@@ -18,6 +22,19 @@ function tb_create_post_type()
       // le support permet de définir les attributs du contenu
       // ici nous il aura un titre, un éditeur et des images en avant
       'has_archive' => true // visible dans les archives
+   ]
+  );
+
+    register_post_type(
+      'collaborateur',
+   [
+      'labels' => [
+        'name' => 'Collaborateurs',
+        'singular_name' => 'Collaborateur'
+        ],
+
+      'public' => true,
+      'has_archive' => true
    ]
   );
 }

@@ -4,7 +4,7 @@ function tb_create_revue_tax()
 {
     register_taxonomy(
     'numero_revue',
-    ['revue', 'post'],
+    ['revue', 'post', 'collaborateur'],
     [
       'label' => 'Numero de la revue',
       'rewrite' => array('slug' => 'numero_revue'),
