@@ -1,6 +1,6 @@
 <?php
 //Désactivation de la prise en charge des commentaires et des rétrolien dans les posts
-function _disable_comments_post_types_support()
+function tb_disable_comments_post_types_support()
 {
     $post_types = get_post_types();
     foreach ($post_types as $post_type) {
