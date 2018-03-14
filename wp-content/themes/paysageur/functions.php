@@ -10,7 +10,6 @@
 * @custom @taxonomy
 */
 require_once TEMPLATEPATH . '/inc/tb_custom.php';
-require_once TEMPLATEPATH . '/inc/tb_taxonomy.php';
 require_once TEMPLATEPATH . '/inc/tb_comment_off.php';
 
 /**
