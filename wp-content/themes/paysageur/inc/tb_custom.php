@@ -37,4 +37,30 @@ function tb_create_post_type()
       'has_archive' => true
    ]
   );
+
+    register_post_type(
+    'contributeur',
+ [
+    'labels' => [
+      'name' => 'Contributeurs',
+      'singular_name' => 'Contributeur'
+      ],
+
+    'public' => true,
+    'has_archive' => true
+ ]
+);
+
+    register_post_type(
+      'points_de_vente',
+    [
+      'labels' => [
+        'name' => 'Points de vente',
+        'singular_name' => 'Point de vente'
+        ],
+
+      'public' => true,
+      'has_archive' => true
+    ]
+    );
 }
