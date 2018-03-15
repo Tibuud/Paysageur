@@ -7,10 +7,11 @@
 * @package Paysageur_Theme
 */
 /**
-* @custom @comment_off
+* @custom @comment_off @taxo
 */
 require_once TEMPLATEPATH . '/inc/tb_custom.php';
 require_once TEMPLATEPATH . '/inc/tb_comment_off.php';
+require_once TEMPLATEPATH . '/inc/tb_taxonomy.php';
 
 /**
 * initialisation du thème
