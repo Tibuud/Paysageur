@@ -180,3 +180,13 @@ if (defined('JETPACK__VERSION')) {
 if (class_exists('WooCommerce')) {
     require get_template_directory() . '/inc/woocommerce.php';
 }
+
+/** Déclaration de clef API Google MAP **/
+function my_acf_google_map_api($api)
+{
+    $api['key'] = 'AIzaSyBJZT3YuA1G-z2XIr4S7_SXW7G9qQ66CXE';
+
+    return $api;
+}
+
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');

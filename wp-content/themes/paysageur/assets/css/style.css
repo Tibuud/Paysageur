@@ -1,0 +1,158 @@
+
+/* Retrait de la fleche du dropdown*/
+
+h2, h3 {
+    font-size: 1.5rem;
+}
+
+/**************HEADER************/
+
+header{
+ font-size: 1.25rem;
+}
+
+/* Retrait de la fleche du dropdown*/
+.dropdown-toggle::after {
+    display:none
+}
+
+/*décalage de la page pour menu fixe*/
+.conteneur-principal {
+    margin-top: 83px;
+}
+
+
+/****************FOOTER**********/
+footer {
+    background-color: black;
+    color: white;
+}
+.mailpoet_paragraph {
+    display: inline-block;
+}
+.illu {
+    background-color: white;
+    color: black;
+}
+
+.asso {
+    text-align: left;
+    display: inline-block;
+}
+
+/********GENERAL*******/
+
+/******Contact*******/
+
+.titre-section {
+    width: max-width;
+    border-bottom: 3px solid black;
+    margin-bottom: 50px;
+}
+
+.contact {
+    width: auto;
+    text-align: center;
+}
+
+.formulaire {
+    margin-bottom: 50px;
+}
+
+.asso-contact {
+    margin-top: 20px;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea
+{
+    background-color: #E6E6E6;
+    color: #8A8A8C;
+    border: none;
+    padding: 8px;
+}
+
+.wpcf7-form p {
+    margin-bottom: -1rem;
+}
+
+.wpcf7-form .requis {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    margin-left: 20vw;
+}
+
+.wpcf7-form div {
+    margin-top: 1rem;
+}
+
+.wpcf7-submit {
+    margin-left: 50px;
+}
+
+@media (min-width:768px) {
+
+    .wpcf7-form .requis {
+        margin-left: 0px;
+    }
+
+    .wpcf7-submit {
+        float: right;
+    }
+
+	.formulaire {
+	    margin-right: 6.25rem;
+        margin-left: 6.25rem;
+	}
+
+    .map-google {
+        margin-left: 6.25rem;
+        margin-right: 6.25rem;
+    }
+
+    .titre-section {
+        margin-left: 6.25rem;
+        width: 50%;
+    }
+
+    .asso-contact {
+        text-align: left;
+    }
+
+    p label, p label input {
+        width: 100%;
+    }
+
+    .wpcf7 {
+        text-align: left;
+    }
+}
+
+/*****************page Mentions légales************/
+.mention {
+    text-align: center;
+    margin-top: 7rem;
+}
+.mention h1 {
+    margin-top: 0;
+    margin-bottom: 4rem;
+}
+
+.mention p {
+    margin-bottom: 1.5rem;
+}
+
+.hebergement {
+    text-align: left;
+}
+
+@media (min-width:768px) {
+
+    .mention {
+        text-align: left;
+        margin-left: 5.5rem;
+        margin-right: 5.5rem;
+    }
+}
