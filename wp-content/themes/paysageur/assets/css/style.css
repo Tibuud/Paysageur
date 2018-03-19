@@ -156,3 +156,10 @@ footer {
         margin-right: 5.5rem;
     }
 }
+
+/********** page cgv **********/
+
+.cgv {
+    max-width: 70%;
+    margin: auto;
+}

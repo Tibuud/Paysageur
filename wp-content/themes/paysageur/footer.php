@@ -26,17 +26,17 @@
 			</div>
 			<div class="col-lg text-center">
 				<div class="asso">
-					<p>Association Paradisiser Vert<br>8, rue Mélingue - 75019 Paris<br>06.02.06.74.72</p>
+					<p>Association Paradisier Vert<br>8, rue Mélingue - 75019 Paris<br>06.02.06.74.72</p>
 				</div>
 			</div>
 		</div>
 		<div class="row justify-content-between">
 			<div class="col-lg-auto">
 				<div class="row justify-content-center order-lg-last text-center">
-				   <a class='col-md-auto' href="<?php echo get_permalink(56); ?>">Contact</a>
+				   <a class='col-md-auto' href="<?php echo get_permalink(get_page_by_title('contact')); ?>">Contact</a>
 				   <a class='col-md-auto' href="#">Crédits</a>
-				   <a class='col-md-auto' href="#">Conditions générales de vente</a>
-				   <a class='col-md-auto' href="#">Mentions légales</a>
+				   <a class='col-md-auto' href="<?php echo get_permalink(81); ?>"><?php echo get_the_title(81);?></a>
+				   <a class='col-md-auto' href="<?php echo get_permalink(83); ?>">Mentions légales</a>
 			   </div>
 			</div>
 			<div class="col-lg-auto text-center order-lg-first">
@@ -52,7 +52,7 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJZT3YuA1G-z2XIr4S7_SXW7G9qQ66CXE"></script>
 	<script type="text/javascript" src='<?php echo esc_url(get_template_directory_uri()) . '/assets/js/google-map.js' ; ?>'></script>
-	
+
 </body>
 
 </html>
