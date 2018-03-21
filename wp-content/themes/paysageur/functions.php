@@ -190,3 +190,17 @@ function my_acf_google_map_api($api)
 }
 
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+
+function tb_traduction($fr_en)
+{
+    if (function_exists('qtrans_getLanguage')) {
+        if (qtrans_getLanguage()=="en"):  echo $fr_en[1];
+        endif;
+        if (qtrans_getLanguage()=="fr"): echo $fr_en[0];
+        endif;
+    } else {
+        echo $fr_en[0];
+    }
+}
+
+add_action('tb_auto_traduction', 'tb_traduction');
