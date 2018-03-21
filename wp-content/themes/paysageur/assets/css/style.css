@@ -1,14 +1,57 @@
 
-/* Retrait de la fleche du dropdown*/
+/********GENERAL*******/
 
-h2, h3 {
+@font-face {
+font-family: 'garcia';
+src: url('fonts/Garcia-Regular.ttf');
+}
+
+* {
+    font-family: 'garcia', sans-serif;
+}
+
+h2, h3, h4 {
     font-size: 1.5rem;
+    font-family: 'Old Standard TT', serif;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: 'Old Standard TT', serif;
+    text-transform: uppercase;
+
+}
+
+a:visited {
+    color: none;
 }
 
 /**************HEADER************/
 
+.mr-auto .nav-item {
+    margin-right: 2.5vw;
+}
+
+.mr-auto .nav-item:hover {
+    border-bottom: 1px solid black;
+}
+
+.mr-auto .nav-item:last-child {
+    margin-right: 2.5vw;
+}
+
+.pull-right .nav-item {
+    margin-right: 1vw;
+}
+
+.navbar-brand {
+    margin-left: 1vw;
+}
+
+
 header{
  font-size: 1.25rem;
+ text-transform: uppercase;
 }
 
 /* Retrait de la fleche du dropdown*/
@@ -22,6 +65,7 @@ header{
 }
 
 
+
 /****************FOOTER**********/
 footer {
     background-color: black;
@@ -30,17 +74,70 @@ footer {
 .mailpoet_paragraph {
     display: inline-block;
 }
+
+.illu img {
+        width: 100%;
+        display: block;
+}
+
 .illu {
     background-color: white;
     color: black;
 }
 
+.sous-illu {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .asso {
     text-align: left;
     display: inline-block;
+    line-height: 2rem;
 }
 
-/********GENERAL*******/
+.bas-page {
+    font-size: 0.75rem;
+}
+
+.bas-page a{
+
+    border-right: 1px solid white;
+    line-height: 0.8rem;
+    color: white;
+}
+
+.bas-page a:last-child{
+    border-right: none;
+}
+
+
+.fa-instagram, .fa-facebook-f, .fa-twitter {
+    font-size: 30px;
+    color: black;
+    margin-top: 10px;
+}
+
+.social {
+    background-color: #CFCFCF;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-right: 1.5rem;
+}
+
+.social:hover {
+    background-color: #d5d8d738;
+}
+
+footer .row:last-child {
+    padding-bottom: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 
 /******Contact*******/
 
