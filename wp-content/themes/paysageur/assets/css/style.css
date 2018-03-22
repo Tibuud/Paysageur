@@ -70,11 +70,7 @@ header{
 
 /*décalage de la page pour menu fixe*/
 .conteneur-principal {
-    margin-top: 80px;
-}
-
-.conteneur-homepage {
-    margin-top: 0px;
+    margin-top: 62px;
 }
 
 /****************FOOTER**********/
@@ -279,7 +275,7 @@ footer .row:last-child {
 /*** section principal ***/
 
 .bg-principal {
-    height: 93vh;
+    height: 94vh;
 }
 
 .bg-principal h1 {
@@ -543,7 +539,7 @@ footer .row:last-child {
 /** section haut de page **/
 
 .top-numero {
-    height: 93vh;
+    height: 94vh;
     background-color: green;
 }
 
