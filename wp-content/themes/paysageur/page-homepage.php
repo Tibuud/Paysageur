@@ -73,9 +73,17 @@ get_header(); ?>
 	<section class='slider'> <!--Slider -->
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				<?php
+                //Get the images ids from the post_metadata
+                $images = acf_photo_gallery('carousel', $post->ID);
+                //Check if return array has anything in it
+                if (count($images)):
+                    //Cool, we got some data so now let's loop over it
+                    $compteur = 0;
+                    foreach ($images as $image): ?>
+				<li data-target="#carouselExampleIndicators" data-slide-to="<?php $compteur ?>" class="<?php if ($compteur == 0) : echo "active"; endif; ?>"></li>
+				<?php $compteur +=1;
+            endforeach; endif; ?>
 			</ol>
 			<div class="carousel-inner" role="listbox">
 				<?php

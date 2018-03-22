@@ -93,8 +93,3 @@
                 </div>
         </nav>
 	</header><!-- #masthead -->
-	<?php
-        if (function_exists('paysageur_woocommerce_header_cart')) {
-            paysageur_woocommerce_header_cart();
-        }
-    ?>

@@ -1,6 +1,10 @@
 
 /********GENERAL*******/
 
+body, html { overflow-x: hidden; }
+
+.container-fluid { padding: 0;}
+
 @font-face {
 font-family: 'garcia';
 src: url('fonts/Garcia-Regular.ttf');
@@ -26,10 +30,37 @@ a:visited {
     color: none;
 }
 
-/* .container-fluid {
-padding-right: 0px;
-padding-left: 0px;
+a {
+    color: black;
+}
+
+/**** qTranslate ***/
+
+.menu-item {
+    padding-top: 0.5rem;
+}
+
+/****WOOCOMMERCE ******/
+
+.add-to-card {
+    color: white;
+}
+
+.price {
+    padding-bottom: 0.3rem;
+}
+
+ul {
+    list-style:none;
+}
+
+/* .resume-numero ul .product img {
+    max-width: 70%;
 } */
+
+ul .product img {
+    max-width: 150rem;
+}
 
 /**************HEADER************/
 
@@ -288,9 +319,9 @@ footer .row:last-child {
 
 .bg-principal h2 {
     margin-top: 7.5vh;
-    font-size: 2.2rem;
-    font-size: italic;
-    /* color: white; */
+    font-size: 2.25rem;
+    font-family: 'garcia', sans-serif;
+    color: white;
 }
 
 /*** manisfeste ***/
@@ -427,7 +458,9 @@ footer .row:last-child {
     margin-top: 2.15rem;
     margin-bottom: 2.15rem;
 }
-
+.extraits img {
+    max-width: 28rem;
+}
 .extraits .extrait-1-img-1 {
     padding-top: 3.125rem;
     padding-right: 20vw;
@@ -546,7 +579,7 @@ footer .row:last-child {
 .top-numero h1 {
     padding-top: 12vh;
     padding-left: 15vw;
-    font-size: 5rem;
+    font-size: 6.25rem;
     color: white;
 }
 
@@ -586,11 +619,13 @@ footer .row:last-child {
     box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.61);
 }
 
-.resume-numero h3 {
+.resume-numero h2, .resume-numero h3 {
     margin-top: 1.2rem;
     margin-bottom: 0;
     text-transform: capitalize;
 }
+
+
 
 .resume-numero div p {
     margin-bottom: 0.2rem;
@@ -653,6 +688,11 @@ footer .row:last-child {
     margin-top: 2rem;
 }
 
+.contributeurs .lien_contrib a {
+    text-decoration: underline;
+    color: black;
+}
+
 @media (min-width:768px) {
 
     .contributeurs h3 {
@@ -663,6 +703,12 @@ footer .row:last-child {
 }
 
 /**section produits-page-numero **/
+
+.produits-page-numero h2 {
+    margin-top: 1.2rem;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
 
 .produits-page-numero h3 {
     width: 50vw;
