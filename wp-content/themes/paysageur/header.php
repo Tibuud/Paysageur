@@ -34,7 +34,7 @@
 
 
 	<header>
-		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light">
                 <?php the_custom_logo(); ?>
                 <a class="navbar-brand d-none d-xl-block" href="<?php bloginfo('url'); ?>"><img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/css/img/logo_typo_paysageur.png' ; ?>" alt="Logo paysageur 2" class="img-rounded center-block"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,6 +90,5 @@
                                     ?>
 						        </nav><!-- #site-navigation -->
 					</ul>
-                </div>
         </nav>
 	</header><!-- #masthead -->

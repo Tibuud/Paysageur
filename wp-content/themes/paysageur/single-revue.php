@@ -190,6 +190,7 @@ get_header();
                             }
                             wp_reset_postdata();
                         } ?>
+			</div>
 		</section> <!-- fin section produit de la page revue -->
 	</main>
 

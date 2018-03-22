@@ -30,8 +30,22 @@ a:visited {
     color: none;
 }
 
+a:hover {
+    color:none;
+}
+
 a {
     color: black;
+}
+
+.btn {
+    background-color: black;
+    border-color: black;
+}
+
+.btn:hover {
+    background-color: #383d41;
+    border-color: #383d41;
 }
 
 /**** qTranslate ***/
@@ -63,9 +77,16 @@ ul .product img {
 }
 
 /**************HEADER************/
+.fixed-top {
+    background-color: white;
+}
 
 .logo div {
     margin-left: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
 }
 
 .mr-auto .nav-item {
@@ -746,4 +767,155 @@ footer .row:last-child {
         width: 30vw;
 
     }
+}
+
+/*** Page Editions Paradisiers ****/
+
+/**** Sous-menu ****/
+
+.sous-menu {
+    display: none;
+}
+
+@media (min-width:1300px) {
+    .sous-menu {
+        font-size: 1.25rem;
+        display: block;
+        padding: 16px 25vw;
+        text-transform: uppercase;
+
+    }
+}
+/**** Top Paradisier ***/
+
+.top-paradisier {
+    height: 88vh;
+    background-color: green;
+}
+
+.top-paradisier h1 {
+    padding-top: 12vh;
+    padding-left: 15vw;
+    font-size: 4rem;
+    color: white;
+    text-transform: capitalize;
+}
+
+.top-paradisier h1 span {
+    display: block;
+    font-family: 'Old Standard TT', serif;
+    padding-left: 7.5vw;
+}
+
+@media (min-width:768px) {
+    .top-paradisier h1 {
+        padding-left: 20vw;
+        font-size: 6.25rem;
+    }
+
+    .top-paradisier h1 span {
+        padding-left: 10vw;
+    }
+}
+
+
+/***  Zone Manifeste ***/
+/** Voir zone manifeste de la home **/
+.manifeste-paradisier div p {
+    text-align: justify;
+}
+.manifeste-paradisier div{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/** Zone fondateurs **/
+
+.fondateurs {
+    margin: 4rem 5vw;;
+}
+
+.fondateurs h3 {
+    margin-left: 10vw;
+    width: 50vw;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+.fondateurs article {
+    width: 30rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 4rem;
+}
+
+.fondateurs article h4 {
+    margin-top: 2rem;
+}
+
+.fondateurs .lien_contrib a {
+    text-decoration: underline;
+    color: black;
+}
+
+@media (min-width:768px) {
+
+    .fondateurs h3 {
+
+        width: 30vw;
+
+    }
+}
+
+/** Zone collaborateurs **/
+
+.collaborateurs {
+    margin: 4rem 5vw;;
+}
+
+.collaborateurs h3 {
+    margin-left: 10vw;
+    width: 70vw;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+.collaborateurs article {
+    width: 25rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 4rem;
+}
+
+.collaborateurs article h4 {
+    margin-top: 2rem;
+}
+
+.collaborateurs .lien_contrib a {
+    text-decoration: underline;
+    color: black;
+}
+
+@media (min-width:768px) {
+
+    .collaborateurs h3 {
+
+        width: 30vw;
+
+    }
+}
+
+/** Zone remerciements **/
+
+.remerciements {
+    padding-top: 2rem;
+    background-color: #CECECE;
+    text-align: center;
+}
+
+.remerciements h3 {
+    font-family: 'Old Standard TT', serif;
+    font-weight: bold;
 }
