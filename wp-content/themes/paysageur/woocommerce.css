@@ -102,11 +102,7 @@ ul.products li.product .button {
 }
 
 @media screen and (min-width: 48em) {
-	ul.products li.product {
-		width: 30.7966666667%;
-		float: left;
-		margin-right: 3.8%;
-	}
+
 	ul.products li.product.first {
 		clear: both;
 	}

@@ -26,15 +26,15 @@ h1 {
 
 }
 
-a:visited {
+.conteneur-principal a:visited {
     color: none;
 }
 
-a:hover {
+.conteneur-principal a:hover {
     color:none;
 }
 
-a {
+.conteneur-principal a {
     color: black;
 }
 
@@ -79,6 +79,9 @@ ul .product img {
 /**************HEADER************/
 .fixed-top {
     background-color: white;
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(166,166,166,1);
+    -moz-box-shadow: 0px 1px 10px 0px rgba(166,166,166,1);
+    box-shadow: 0px 1px 10px 0px rgba(166,166,166,1);
 }
 
 .logo div {
@@ -111,13 +114,13 @@ ul .product img {
 
 
 header{
- font-size: 1.25rem;
- text-transform: uppercase;
+    font-size: 1.25rem;
+    text-transform: uppercase;
 }
 
 /* Retrait de la fleche du dropdown*/
 .dropdown-toggle::after {
-    display:none
+    display:none;
 }
 
 /*décalage de la page pour menu fixe*/
@@ -176,12 +179,14 @@ footer {
 
 
 .fa-instagram, .fa-facebook-f, .fa-twitter {
+
     font-size: 30px;
     color: black;
     margin-top: 10px;
 }
 
 .social {
+    transition: background-color 0.5s ease;
     background-color: #CFCFCF;
     min-width: 50px;
     height: 50px;
@@ -964,5 +969,130 @@ footer .row:last-child {
     .backers {
         text-align: center;
         padding: 1.5rem 10vw 0 10vw;
+    }
+}
+
+/************ PAGE BOUTIQUE ***************/
+
+/**** sectin sous menu ************/
+/***** Voir sous menu de la page paradisier **************/
+
+/**section produits-page-boutique **/
+
+.produits-page-boutique {
+    margin: 4rem 5vw;;
+}
+
+.produits-page-boutique h3 {
+    margin-left: 5vw;
+    width: 50vw;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+
+.produits-page-boutique h2 {
+    margin-top: 1.2rem;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+
+.produits-page-boutique .d-inline-flex {
+    margin-top: 4.5rem;
+    min-width: 20vw;
+
+}
+
+.conteneur-principal .produits-page-boutique button a {
+    color: white;
+}
+
+.produits-page-boutique article h4 {
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+.produits-page-boutique article p {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+
+@media (min-width:768px) {
+
+    .produits-page-boutique {
+        margin-right: 10vw;
+        margin-left: 10vw;
+    }
+
+    .produits-page-boutique h3 {
+        width: 30vw;
+
+    }
+}
+
+/******* Points de vente ******/
+
+.section_points-de-vente .d-flex {
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.point-de-vente {
+    padding: 1rem 3vw;
+    min-width: 30vw;
+}
+
+.point-de-vente p {
+    line-height: 0.35rem;
+}
+
+.section_points-de-vente h3 {
+    margin-bottom: 2rem;
+    margin-left: 5vw;
+    width: 50vw;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+.section_points-de-vente h4 {
+    margin-left: 2vw;
+    width: 50vw;
+    font-weight: bold;
+}
+
+.section_points-de-vente .ville {
+    margin-top: 1rem;
+    margin-left: 3vw;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+
+@media (min-width:768px) {
+
+    .section_points-de-vente .d-flex {
+        margin-left: 1.5vw;
+        margin-right: 0vw;
+    }
+
+    .section_points-de-vente {
+        padding: 0 10vw 0 10vw;
+    }
+
+    .point-de-vente {
+        padding: 1rem 1vw;
+        min-width: 13vw;
+    }
+
+    .section_points-de-vente h3 {
+        width: 30vw;
+
     }
 }
