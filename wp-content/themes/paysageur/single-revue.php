@@ -184,7 +184,7 @@ get_header();
                     'product_cat' => 'derive',
                     'posts_per_page'=>3,
                     'order'=>'DESC',
-                    'orderby'=>'ID',
+                    'orderby'=>'rand',
                     );
 
                         $the_query = new WP_Query($args);

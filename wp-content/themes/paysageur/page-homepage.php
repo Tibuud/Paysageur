@@ -32,42 +32,42 @@ get_header(); ?>
                 'orderby'=>'ID',
                 );
 
-                    $the_query = new WP_Query($args);
+                $the_query = new WP_Query($args);
 
-                    // The Loop
-                    if ($the_query->have_posts()) {
-                        while ($the_query->have_posts()) {
-                            $the_query->the_post(); ?>
-							<div class="d-inline-flex p-2">
-								<div>
+                // The Loop
+                if ($the_query->have_posts()) {
+                    while ($the_query->have_posts()) {
+                        $the_query->the_post(); ?>
+						<div class="d-inline-flex p-2">
+							<div>
 
-								<?php $image = get_field('couverture');
-                            if (!empty($image)): ?>
-								<div>
-									<a href=" <?php the_permalink(); ?> "><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /></a>
-								</div>
-								<div>
-									<a href="<?php the_permalink(); ?>">
-										<button type="button" class="btn btn-primary">
-											<?php $fr_en = ['Découvrir', 'Discover'];
-                            do_action('tb_auto_traduction', $fr_en); ?>
-										</button>
-									</a>
-								</div>
-								<div>
-									<a href="<?php echo get_permalink(6); ?>">
-										<button type="button" class="btn btn-primary">
-									<?php $fr_en = ['Acheter', 'Buy'];
-                            do_action('tb_auto_traduction', $fr_en); ?>
-										</button>
-									</a>
-								</div>
+							<?php $image = get_field('couverture');
+                        if (!empty($image)): ?>
+							<div>
+								<a href=" <?php the_permalink(); ?> "><img  class="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /></a>
+							</div>
+							<div>
+								<a href="<?php the_permalink(); ?>">
+									<button type="button" class="btn btn-primary">
+										<?php $fr_en = ['Découvrir', 'Discover'];
+                        do_action('tb_auto_traduction', $fr_en); ?>
+									</button>
+								</a>
+							</div>
+							<div>
+								<a href="<?php echo get_permalink(6); ?>">
+									<button type="button" class="btn btn-primary">
+								<?php $fr_en = ['Acheter', 'Buy'];
+                        do_action('tb_auto_traduction', $fr_en); ?>
+									</button>
+								</a>
 							</div>
 						</div>
-								<?php endif;
-                        }
-                        wp_reset_postdata();
-                    } ?>
+					</div>
+						<?php endif;
+                    }
+                    wp_reset_postdata();
+                } ?>
 		</div>
 	</section><!-- fin section découverte -->
 	<section class='slider'> <!--Slider -->
