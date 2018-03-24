@@ -191,6 +191,8 @@ function my_acf_google_map_api($api)
 
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 
+
+/*******Fonction de traduction si jamais qTranslate est désactivé, le contenu fr continura d'apparaitre. ****/
 function tb_traduction($fr_en)
 {
     if (function_exists('qtrans_getLanguage')) {

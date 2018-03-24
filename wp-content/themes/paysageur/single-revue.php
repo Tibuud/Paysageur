@@ -11,10 +11,23 @@ get_header();
 ?>
 
 <main class="container-fluid conteneur-principal">
-		<section class='top-numero'>
+			<?php
+
+        $image = get_field('image_de_fond');
+
+        if (!empty($image)): ?>
+
+			<section class='top-numero' style="background-image: url(<?php echo $image['url']; ?>);">
+
+		<?php else: ?>
+
+			<section class='top-numero'>
+
+		<?php endif; ?>
+
 			<h1>N°<?php if (strlen(get_field('numero')) == 1) {
-    echo "0";
-}
+            echo "0";
+        }
                 the_field('numero'); ?></h1>
 			<h2><?php the_field('sous-titre'); ?></h2>
 		</section>
@@ -154,7 +167,7 @@ get_header();
 												<?php endif; ?>
 													<h4><?php the_field('nom') ?></h4>
 													<p><?php the_field('description') ?></p>
-													<div class="lien_contrib"><a href="<?php the_field('lien') ?>"><?php the_field('nom_lien') ?></a></div>
+													<div class="lien_contrib"><a href="<?php the_field('lien') ?>" target='_blank'><?php the_field('nom_lien') ?></a></div>
 												</div>
 											</article>
 				    <?php endforeach; ?>

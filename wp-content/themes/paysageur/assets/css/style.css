@@ -593,8 +593,13 @@ footer .row:last-child {
 /** section haut de page **/
 
 .top-numero {
+        background-position: center;
+        background-size: cover;
+}
+
+.top-numero {
     height: 94vh;
-    background-color: green;
+    background-color: black;
 }
 
 .top-numero h1 {
@@ -787,10 +792,15 @@ footer .row:last-child {
     }
 }
 /**** Top Paradisier ***/
+.top-paradisier {
+    background-image: url(img/bg-paradisier.png);
+        background-position: center;
+        background-size: cover;
+}
 
 .top-paradisier {
     height: 88vh;
-    background-color: green;
+    background-color: black;
 }
 
 .top-paradisier h1 {
@@ -854,16 +864,16 @@ footer .row:last-child {
     margin-top: 2rem;
 }
 
-.fondateurs .lien_contrib a {
+.fondateurs a {
     text-decoration: underline;
     color: black;
 }
 
 @media (min-width:768px) {
 
-    .fondateurs h3 {
+    .fondateurs article {
 
-        width: 30vw;
+        width: 35vw;
 
     }
 }
@@ -893,7 +903,7 @@ footer .row:last-child {
     margin-top: 2rem;
 }
 
-.collaborateurs .lien_contrib a {
+.collaborateurs .lien_collab a {
     text-decoration: underline;
     color: black;
 }
@@ -901,9 +911,7 @@ footer .row:last-child {
 @media (min-width:768px) {
 
     .collaborateurs h3 {
-
         width: 30vw;
-
     }
 }
 
@@ -911,11 +919,50 @@ footer .row:last-child {
 
 .remerciements {
     padding-top: 2rem;
+    padding-bottom: 2rem;
     background-color: #CECECE;
     text-align: center;
 }
 
 .remerciements h3 {
     font-family: 'Old Standard TT', serif;
-    font-weight: bold;
+
+}
+
+.remerciements p {
+    padding-right: 8vw;
+    padding-left: 8vw;
+    padding-top: 1rem;
+}
+
+.remerciements-deco {
+    padding-top: 1rem;
+    margin: auto;
+    width: 20vw;
+    border-bottom: 1px solid black;
+}
+
+@media (min-width:768px) {
+    .remerciements p {
+        padding-right: 20vw;
+        padding-left: 20vw;
+    }
+
+    .remerciements-deco {
+        width: 5vw;
+    }
+}
+
+/** Zone backers **/
+
+.backers {
+    text-align: center;
+    padding: 1.5rem rem 0 15rem;;
+}
+
+@media (min-width:768px) {
+    .backers {
+        text-align: center;
+        padding: 1.5rem 10vw 0 10vw;
+    }
 }
