@@ -7,8 +7,12 @@ get_header(); ?>
 		<h2 class="text-center"><?php the_field('sous-titre') ?></h2>
 	</section>
 	<section class="row manifeste"> <!-- Zone manifeste -->
-		<div class='text-center manifeste-contenu'>
-			<img src="img/logo_header.png" alt="">
+		<div class='text-center manifeste-contenu' id='manifeste'>
+			<?php
+            $image = get_field('image_manifeste');
+            if (!empty($image)): ?>
+				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+			<?php endif; ?>
 			<h3><?php the_field('titre_manifeste') ?></h3>
 			<p class='text-left'><?php the_field('texte_manifeste') ?>
 			</p>

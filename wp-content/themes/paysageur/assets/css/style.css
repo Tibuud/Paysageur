@@ -395,6 +395,10 @@ footer .row:last-child {
 
 /*** manisfeste ***/
 
+#manifeste {
+    opacity: 0;
+}
+
 .manifeste div{
     z-index: 1;
     text-align: center;
@@ -879,6 +883,11 @@ footer .row:last-child {
 
 /***  Zone Manifeste ***/
 /** Voir zone manifeste de la home **/
+
+#manifeste-paradisier {
+    opacity: 0;
+}
+
 .manifeste-paradisier div p {
     text-align: justify;
 }

@@ -44,7 +44,7 @@ if (!empty($image)): ?>
             <h1><?php the_field('titre'); ?></h1>
             <?php endif; ?>
     </section>
-    <section class="row manifeste manifeste-paradisier"> <!-- Zone manifeste -->
+    <section class="row manifeste manifeste-paradisier" id='manifeste-paradisier'> <!-- Zone manifeste -->
         <div>
             <p><?php the_field('description'); ?></p>
         </div>
