@@ -4,7 +4,7 @@ Tags: newsletter, email, welcome email, post notification, autoresponder, signup
 Requires at least: 4.7
 Tested up to: 4.9
 Requires PHP: 5.3
-Stable tag: 3.5.1
+Stable tag: 3.6.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -116,10 +116,20 @@ Stop by our [support site](https://www.mailpoet.com/support).
 
 == Changelog ==
 
+= 3.6.1 - 2018-03-20 =
+* Fixed: prevents sending from being paused for long time during plugin update. Big thanks to Deborah, Kelley, Ciro and Justin!
+
+= 3.6.0 - 2018-03-20 =
+* Improved: previously used widgets settings in the designer are automatically saved to save you time;
+* Improved: welcome emails are now sent with our API's subscribeToList method, and not just addSubscriber. Thanks to Sandra and Donald;
+* Improved: less server resources are required to send to very large number of subscribers;
+* Improved: shortcodes can be used inside URLs when click tracking is enabled. Thanks to Bob;
+* Fixed: more reliable screenshots of your email templates;
+
 = 3.5.1 - 2018-03-13 =
 * Improved: email validation for WordPress user synchronization;
 * Fixed: import no longer discards e-mails with dashes. A big thank-you to everyone who reported the issue;
-* Fixed: sending does not get stuck on the last step of the newsletter creation process. Thanks, René!
+* Fixed: sending does not get stuck on the last step of the newsletter creation process. Thanks, Rene!
 
 = 3.5.0 - 2018-03-06 =
 * Premium: bulk actions can now be executed on subscribers belonging to a selected segment;

@@ -1,0 +1,187 @@
+
+#map-container{
+	position: relative;
+}
+#desc_overlay{
+	background: rgba(63, 181, 163, .8);
+	width: 350px;
+	position: absolute;
+	z-index: 2;
+	display: none;
+	top: -40px;
+	padding: 10px 15px;
+	right: 70px;
+	border: 1px solid #e7f6f4;
+	font-family: 'PT Sans Narrow', sans-serif;
+	-webkit-box-shadow: -1px 0px 15px 0px rgba(40, 50, 50, 0.42);
+	-moz-box-shadow:    -1px 0px 15px 0px rgba(40, 50, 50, 0.42);
+	box-shadow:         -1px 0px 15px 0px rgba(40, 50, 50, 0.42);
+}
+#desc_overlay h2{
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+#ico_close{position: absolute; right: 10px; top: 5px; cursor: pointer}
+#overlay-content{
+	font-size: 16px;
+	font-weight: 300;
+	height: 360px;
+	width: 100%;
+	padding: 10px 0;
+	overflow: hidden!important;
+}
+#overlay-content p{
+	line-height: 22px;
+	text-shadow: 1px 1px 10px rgba(150, 148, 150, 1);
+}
+#country_title{
+	padding: 10px;
+	background-color: #2399d9;
+	font-size: 16px;
+	font-weight: bold;
+}
+#country_desc{
+	padding: 10px;
+}
+
+.animated { 
+    -webkit-animation-duration: .51s; 
+    animation-duration: .51s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: linear; 
+    animation-timing-function: linear; 
+} 
+.a_readmore{
+	cursor: pointer;
+}
+.ui-widget{ font-family: inherit!important; font-size: inherit!important;}
+
+
+.nav-tabs {
+    border-bottom: 1px solid #DDDDDD;
+}
+.nav-tabs > li {
+    float: left;
+    margin-bottom: -1px;
+}
+.nav-tabs > li > a {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 4px 4px 0 0;
+    line-height: 1.42857;
+    margin-right: 2px;
+}
+.nav-tabs > li > a:hover {
+    border-color: #EEEEEE #EEEEEE #DDDDDD;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #FFFFFF;
+    border-color: #DDDDDD #DDDDDD rgba(0, 0, 0, 0);
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    color: #555555;
+    cursor: default;
+}
+.nav-tabs.nav-justified {
+    border-bottom: 0 none;
+    width: 100%;
+}
+.nav-tabs.nav-justified > li {
+    float: none;
+}
+.nav-tabs.nav-justified > li > a {
+    margin-bottom: 5px;
+    text-align: center;
+}
+.nav-tabs.nav-justified > .dropdown .dropdown-menu {
+    left: auto;
+    top: auto;
+}
+.ui-widget-header {
+	border: none;
+	border-bottom: 1px solid #aaaaaa;
+	background: none;
+}
+#maptabs{ margin-top: 10px;}
+
+@-webkit-keyframes fadeInDown { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(-90px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes fadeInDown { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(-90px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+
+.fadeInDown { 
+    -webkit-animation-name: fadeInDown; 
+    animation-name: fadeInDown; 
+}
+
+
+
+@-webkit-keyframes fadeOutDown { 
+    0% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+    100% { 
+        opacity: 0; 
+        -webkit-transform: translateY(20px); 
+    } 
+} 
+@keyframes fadeOutDown { 
+    0% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+    100% { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    } 
+} 
+.fadeOutDown { 
+    -webkit-animation-name: fadeOutDown; 
+    animation-name: fadeOutDown; 
+}
+
+.phoca-flagbox {
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	position: relative;
+	float: right;
+}
+.phoca-flag {
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid #e5e5e5;
+}
+.ps-container {
+	background-image:none !important;
+}

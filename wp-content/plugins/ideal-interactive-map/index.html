@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>amMap example</title>
+
+        <link rel="stylesheet" href="ammap/ammap.css" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+    <link href="src/perfect-scrollbar.css" rel="stylesheet">
+        
+        <style type="text/css">        </style>
+    </head>
+
+    <body>
+    	<div id="map-container">
+        <div id="mapdiv" style="width: 100%; background-color:#EEEEEE; height: 500px;"></div>
+        <div id="desc_overlay" class="animated">
+	        <h2></h2><span id="ico_close"><img src="img/close.png" align="middle" /></span>
+	        <div id="overlay-content"></p>
+	        </div>
+        </div>
+    	</div>
+    	
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="src/jquery.mousewheel.js"></script>
+    <script src="src/perfect-scrollbar.js"></script>
+    
+        <script src="ammap/ammap.js" type="text/javascript"></script>
+        <!-- map file should be included after ammap.js -->
+		<script src="ammap/maps/js/worldLow.js" type="text/javascript"></script>
+		<script src="ammap/themes/light.js" type="text/javascript"></script>
+		
+				
+        <script type="text/javascript">
+        	var targetSVG = "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z M9,15.93 c-3.83,0-6.93-3.1-6.93-6.93S5.17,2.07,9,2.07s6.93,3.1,6.93,6.93S12.83,15.93,9,15.93 M12.5,9c0,1.933-1.567,3.5-3.5,3.5S5.5,10.933,5.5,9S7.067,5.5,9,5.5 S12.5,7.067,12.5,9z";
+			var mapDataProvider;
+			var mapDataProvider = {
+			        map: "worldLow",
+			        zoomOnDoubleClick: false,
+			        areas: [{
+			            id: "RU",
+			            groupId: "RU",
+			        }, {
+			            id: "US",
+			            groupId: "US"
+			        }, {
+			            id: "PH",
+			            groupId: "PH"
+			        }],
+			        images: [{
+			            svgPath: targetSVG,
+			            zoomLevel: 2,
+			            scale: 1,
+			            color: "#234589",
+			            title: "Moscow",
+			            latitude: 55.7558,
+			            longitude: 37.6176,
+			            groupId: "RU"
+			        }, {
+			            svgPath: targetSVG,
+			            zoomLevel: 2,
+			            scale: 1,
+			            color: "#234589",
+			            title: "Washington",
+			            latitude: 38.8921,
+			            longitude: -77.0241,
+			            groupId: "US"
+			        }, {
+			            svgPath: targetSVG,
+			            zoomLevel: 2,
+			            scale: 1,
+			            color: "#234589",
+			            title: "Philippines",
+			            latitude: 13.385389,
+			            longitude: 122.259282,
+			            groupId: "PH"
+			        }]
+			    };
+			var map = AmCharts.makeChart("mapdiv", {
+			    type: "map",
+			    theme: "light",
+			    centerMap: true,
+				getAreasFromMap: true,
+			    pathToImages: "ammap/images/",
+				mouseWheelZoomEnabled: true,
+			
+			    imagesSettings: {
+				    rollOverScale: 3,
+				    selectedScale: 3,
+			        zoomX: 2,
+			        color: "#15a892"
+			       
+			    },
+			
+			    zoomControl: {
+			        buttonFillColor: "#70A7D1",
+			        gridHeight: 50 
+			    },
+			
+			    areasSettings: {
+			        rollOverColor: "#15a892",
+			        color: "#5296cb",
+			        unlistedAreasColor: "#81C1DF",
+			        selectedColor: "#15a892",
+					rollOverAlpha: 0.8
+			    },
+				selectedObject: { color: "#15a892"},
+			    dataProvider: mapDataProvider
+			});
+			
+		    map.addListener("clickMapObject", function (event) {
+		    	onregionClick(event);
+		    });
+		   	 map.addListener("rendered", function (event) {
+		   	 console.log(event);
+		   	 }); 
+		    map.addListener("homeButtonClicked", function (event) {
+			    
+			     jQuery("#ico_close").click();
+		    });
+			function zoomOut () {
+			    map.zoomOut();
+			    
+			}
+		    function centerMap () {
+			  //  map.zoomToLongLat(map.zoomLevel(), map.initialZoomLongitude, map.initialZoomLatitude, true);
+			}
+		    
+		    jQuery(document).ready(function ($) {
+		    	/** Scrollbar*/
+		        jQuery('#overlay-content').perfectScrollbar({suppressScrollX: true});
+		        jQuery("#ico_close").on("click",function(){
+	       		     
+			        var map_overlay = jQuery("#desc_overlay");
+						map_overlay.removeClass("fadeInDown");
+						map_overlay.addClass("fadeOutDown");
+						
+					  zoomOut();
+					  map_overlay.delay( 1200 ).css({"display": 'none'});
+	       		   	
+		        });
+		      
+		      });
+		     function onregionClick(country){
+				 var map_overlay = jQuery("#desc_overlay");
+				jQuery("#country_title").html(country);
+				
+						map_overlay.removeClass("fadeOutDown");
+						map_overlay.delay( 800 ).css({"display": 'block'});
+						map_overlay.addClass("fadeInDown");
+						map_overlay.drags();
+				}
+			//Draggable
+			(function($) {
+			    $.fn.drags = function(opt) {
+			
+			        opt = $.extend({handle:"",cursor:"move"}, opt);
+			
+			        if(opt.handle === "") {
+			            var $el = this;
+			        } else {
+			            var $el = this.find(opt.handle);
+			        }
+			
+			        return $el.css('cursor', opt.cursor).on("mousedown", function(e) {
+			            if(opt.handle === "") {
+			                var $drag = $(this).addClass('draggable');
+			            } else {
+			                var $drag = $(this).addClass('active-handle').parent().addClass('draggable');
+			            }
+			            var z_idx = $drag.css('z-index'),
+			                drg_h = $drag.outerHeight(),
+			                drg_w = $drag.outerWidth(),
+			                pos_y = $drag.offset().top + drg_h - e.pageY,
+			                pos_x = $drag.offset().left + drg_w - e.pageX;
+			            $drag.css('z-index', 1000).parents().on("mousemove", function(e) {
+			                $('.draggable').offset({
+			                    top:e.pageY + pos_y - drg_h,
+			                    left:e.pageX + pos_x - drg_w
+			                }).on("mouseup", function() {
+			                    $(this).removeClass('draggable').css('z-index', z_idx);
+			                });
+			            });
+			            e.preventDefault(); // disable selection
+			        }).on("mouseup", function() {
+			            if(opt.handle === "") {
+			                $(this).removeClass('draggable');
+			            } else {
+			                $(this).removeClass('active-handle').parent().removeClass('draggable');
+			            }
+			        });
+			
+			    }
+			})(jQuery);
+        </script>
+    </body>
+
+</html>

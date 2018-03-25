@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://support.mailpoet.com/\n"
-"POT-Creation-Date: 2018-03-13 23:32:30+00:00\n"
+"POT-Creation-Date: 2018-03-20 21:15:48+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -93,12 +93,12 @@ msgstr ""
 msgid "Check your inbox or spam folder to confirm your subscription."
 msgstr ""
 
-#: lib/API/JSON/v1/Forms.php:265 lib/API/JSON/v1/Newsletters.php:237
+#: lib/API/JSON/v1/Forms.php:265 lib/API/JSON/v1/Newsletters.php:241
 #: lib/API/JSON/v1/Segments.php:125
 msgid "Copy of %s"
 msgstr ""
 
-#: lib/API/JSON/v1/Mailer.php:36 lib/API/JSON/v1/Newsletters.php:341
+#: lib/API/JSON/v1/Mailer.php:36 lib/API/JSON/v1/Newsletters.php:345
 msgid "The email could not be sent: %s"
 msgstr ""
 
@@ -107,43 +107,43 @@ msgstr ""
 msgid "This template does not exist."
 msgstr ""
 
-#: lib/API/JSON/v1/Newsletters.php:37 lib/API/JSON/v1/Newsletters.php:155
-#: lib/API/JSON/v1/Newsletters.php:187 lib/API/JSON/v1/Newsletters.php:203
-#: lib/API/JSON/v1/Newsletters.php:219 lib/API/JSON/v1/Newsletters.php:233
-#: lib/API/JSON/v1/Newsletters.php:266 lib/API/JSON/v1/Newsletters.php:299
-#: lib/API/JSON/v1/SendingQueue.php:35 lib/API/JSON/v1/SendingQueue.php:120
-#: lib/API/JSON/v1/SendingQueue.php:146
+#: lib/API/JSON/v1/Newsletters.php:38 lib/API/JSON/v1/Newsletters.php:156
+#: lib/API/JSON/v1/Newsletters.php:191 lib/API/JSON/v1/Newsletters.php:207
+#: lib/API/JSON/v1/Newsletters.php:223 lib/API/JSON/v1/Newsletters.php:237
+#: lib/API/JSON/v1/Newsletters.php:270 lib/API/JSON/v1/Newsletters.php:303
+#: lib/API/JSON/v1/SendingQueue.php:35 lib/API/JSON/v1/SendingQueue.php:116
+#: lib/API/JSON/v1/SendingQueue.php:142
 msgid "This newsletter does not exist."
 msgstr ""
 
-#: lib/API/JSON/v1/Newsletters.php:146
+#: lib/API/JSON/v1/Newsletters.php:147
 msgid "You need to specify a status."
 msgstr ""
 
-#: lib/API/JSON/v1/Newsletters.php:257
+#: lib/API/JSON/v1/Newsletters.php:261
 msgid "Newsletter data is missing."
 msgstr ""
 
-#: lib/API/JSON/v1/Newsletters.php:290
+#: lib/API/JSON/v1/Newsletters.php:294
 msgid "Please specify receiver information."
 msgstr ""
 
 #: lib/API/JSON/v1/Segments.php:24 lib/API/JSON/v1/Segments.php:75
 #: lib/API/JSON/v1/Segments.php:91 lib/API/JSON/v1/Segments.php:107
-#: lib/API/JSON/v1/Segments.php:121 lib/API/MP/v1/API.php:58
-#: lib/API/MP/v1/API.php:103
+#: lib/API/JSON/v1/Segments.php:121 lib/API/MP/v1/API.php:60
+#: lib/API/MP/v1/API.php:111
 msgid "This list does not exist."
 msgstr ""
 
-#: lib/API/JSON/v1/SendingQueue.php:55
+#: lib/API/JSON/v1/SendingQueue.php:56
 msgid "This newsletter is already being sent."
 msgstr ""
 
-#: lib/API/JSON/v1/SendingQueue.php:84
+#: lib/API/JSON/v1/SendingQueue.php:85
 msgid "There are no subscribers in that list!"
 msgstr ""
 
-#: lib/API/JSON/v1/SendingQueue.php:127 lib/API/JSON/v1/SendingQueue.php:153
+#: lib/API/JSON/v1/SendingQueue.php:123 lib/API/JSON/v1/SendingQueue.php:149
 msgid "This newsletter has not been sent yet."
 msgstr ""
 
@@ -207,7 +207,7 @@ msgstr ""
 
 #: lib/API/JSON/v1/Subscribers.php:35 lib/API/JSON/v1/Subscribers.php:208
 #: lib/API/JSON/v1/Subscribers.php:224 lib/API/JSON/v1/Subscribers.php:240
-#: lib/API/MP/v1/API.php:52 lib/API/MP/v1/API.php:97 lib/API/MP/v1/API.php:225
+#: lib/API/MP/v1/API.php:54 lib/API/MP/v1/API.php:105 lib/API/MP/v1/API.php:233
 msgid "This subscriber does not exist."
 msgstr ""
 
@@ -249,29 +249,29 @@ msgstr ""
 msgid "Last name"
 msgstr ""
 
-#: lib/API/MP/v1/API.php:46 lib/API/MP/v1/API.php:91
+#: lib/API/MP/v1/API.php:48 lib/API/MP/v1/API.php:99
 msgid "At least one segment ID is required."
 msgstr ""
 
-#: lib/API/MP/v1/API.php:75 lib/API/MP/v1/API.php:120
+#: lib/API/MP/v1/API.php:77 lib/API/MP/v1/API.php:128
 msgid "List with ID %s does not exist."
 msgid_plural "Lists with IDs %s do not exist."
 msgstr[0] ""
 msgstr[1] ""
 
-#: lib/API/MP/v1/API.php:141
+#: lib/API/MP/v1/API.php:149
 msgid "Subscriber email address is required."
 msgstr ""
 
-#: lib/API/MP/v1/API.php:148
+#: lib/API/MP/v1/API.php:156
 msgid "This subscriber already exists."
 msgstr ""
 
-#: lib/API/MP/v1/API.php:194
+#: lib/API/MP/v1/API.php:202
 msgid "List name is required."
 msgstr ""
 
-#: lib/API/MP/v1/API.php:201
+#: lib/API/MP/v1/API.php:209
 msgid "This list already exists."
 msgstr ""
 
@@ -299,7 +299,7 @@ msgstr ""
 msgid "Manage segments"
 msgstr ""
 
-#: lib/Config/Capabilities.php:67 lib/Config/Menu.php:645 views/premium.html:41
+#: lib/Config/Capabilities.php:67 lib/Config/Menu.php:646 views/premium.html:41
 msgid "MailPoet"
 msgstr ""
 
@@ -400,80 +400,80 @@ msgstr[1] ""
 msgid "Settings imported"
 msgstr ""
 
-#: lib/Config/Menu.php:86 lib/Config/Menu.php:87 views/newsletters.html:25
+#: lib/Config/Menu.php:87 lib/Config/Menu.php:88 views/newsletters.html:25
 msgid "Emails"
 msgstr ""
 
-#: lib/Config/Menu.php:111 lib/Newsletter/Shortcodes/ShortcodesHelper.php:33
+#: lib/Config/Menu.php:112 lib/Newsletter/Shortcodes/ShortcodesHelper.php:33
 #: views/newsletter/templates/components/sidebar/styles.hbs:75
 #: views/newsletters.html:126
 msgid "Newsletter"
 msgstr ""
 
-#: lib/Config/Menu.php:112 views/newsletter/editor.html:228
+#: lib/Config/Menu.php:113 views/newsletter/editor.html:228
 msgid "Newsletter Editor"
 msgstr ""
 
-#: lib/Config/Menu.php:124 lib/Config/Menu.php:125 views/forms.html:25
+#: lib/Config/Menu.php:125 lib/Config/Menu.php:126 views/forms.html:25
 #: views/mp2migration.html:14
 msgid "Forms"
 msgstr ""
 
-#: lib/Config/Menu.php:149 lib/Config/Menu.php:150
+#: lib/Config/Menu.php:150 lib/Config/Menu.php:151
 msgid "Form Editor"
 msgstr ""
 
-#: lib/Config/Menu.php:162 lib/Config/Menu.php:163
+#: lib/Config/Menu.php:163 lib/Config/Menu.php:164
 #: views/subscribers/subscribers.html:18
 msgid "Subscribers"
 msgstr ""
 
-#: lib/Config/Menu.php:187 lib/Config/Menu.php:188
+#: lib/Config/Menu.php:188 lib/Config/Menu.php:189
 #: views/subscribers/importExport/import.html:7
 #: views/subscribers/subscribers.html:95
 msgid "Import"
 msgstr ""
 
-#: lib/Config/Menu.php:200 lib/Config/Menu.php:201
+#: lib/Config/Menu.php:201 lib/Config/Menu.php:202
 #: views/subscribers/importExport/export.html:6
 #: views/subscribers/importExport/export.html:82
 #: views/subscribers/subscribers.html:96
 msgid "Export"
 msgstr ""
 
-#: lib/Config/Menu.php:213 lib/Config/Menu.php:214 views/forms.html:53
+#: lib/Config/Menu.php:214 lib/Config/Menu.php:215 views/forms.html:53
 #: views/newsletters.html:69 views/newsletters.html:171 views/segments.html:13
 #: views/subscribers/subscribers.html:67
 msgid "Lists"
 msgstr ""
 
-#: lib/Config/Menu.php:240 lib/Config/Menu.php:241 views/form/editor.html:37
+#: lib/Config/Menu.php:241 lib/Config/Menu.php:242 views/form/editor.html:37
 #: views/mp2migration.html:15 views/newsletters.html:70 views/settings.html:6
 msgid "Settings"
 msgstr ""
 
-#: lib/Config/Menu.php:253 lib/Config/Menu.php:254 views/help.html:5
+#: lib/Config/Menu.php:254 lib/Config/Menu.php:255 views/help.html:5
 msgid "Help"
 msgstr ""
 
-#: lib/Config/Menu.php:267 lib/Config/Menu.php:268
+#: lib/Config/Menu.php:268 lib/Config/Menu.php:269
 msgid "Premium"
 msgstr ""
 
-#: lib/Config/Menu.php:280 lib/Config/Menu.php:281 views/update.html:12
+#: lib/Config/Menu.php:281 lib/Config/Menu.php:282 views/update.html:12
 #: views/welcome.html:12
 msgid "Welcome"
 msgstr ""
 
-#: lib/Config/Menu.php:293 lib/Config/Menu.php:294 views/segments.html:43
+#: lib/Config/Menu.php:294 lib/Config/Menu.php:295 views/segments.html:43
 msgid "Update"
 msgstr ""
 
-#: lib/Config/Menu.php:306
+#: lib/Config/Menu.php:307
 msgid "Migration"
 msgstr ""
 
-#: lib/Config/Menu.php:565
+#: lib/Config/Menu.php:566
 msgid "In any WordPress role"
 msgstr ""
 
@@ -483,11 +483,11 @@ msgid ""
 "might work within a MultiSite environment, we don’t support it."
 msgstr ""
 
-#: lib/Config/Populator.php:168
+#: lib/Config/Populator.php:165
 msgid "My First List"
 msgstr ""
 
-#: lib/Config/Populator.php:170
+#: lib/Config/Populator.php:167
 msgid "This list is automatically created when you install MailPoet."
 msgstr ""
 
@@ -825,12 +825,12 @@ msgid ""
 msgstr ""
 
 #: lib/Config/PopulatorData/Templates/PostNotificationsBlank1Column.php:179
-#: views/newsletter/editor.html:976 views/newsletter/editor.html:1098
+#: views/newsletter/editor.html:976 views/newsletter/editor.html:1100
 msgid "Author:"
 msgstr ""
 
 #: lib/Config/PopulatorData/Templates/PostNotificationsBlank1Column.php:181
-#: views/newsletter/editor.html:978 views/newsletter/editor.html:1100
+#: views/newsletter/editor.html:978 views/newsletter/editor.html:1102
 msgid "Categories:"
 msgstr ""
 
@@ -1069,7 +1069,7 @@ msgstr ""
 
 #: lib/Config/ServicesChecker.php:96
 msgid ""
-"Your License Key is expiring! Don't forget to [link]renew your "
+"Your License Key for MailPoet is expiring! Don't forget to [link]renew your "
 "license[/link] by %s to keep enjoying automatic updates and Premium support."
 msgstr ""
 
@@ -1089,12 +1089,19 @@ msgstr ""
 msgid "Maximum execution time has been reached."
 msgstr ""
 
-#: lib/Cron/Daemon.php:33
+#: lib/Cron/Daemon.php:34
 msgid "Invalid or missing request data."
 msgstr ""
 
-#: lib/Cron/Daemon.php:36
+#: lib/Cron/Daemon.php:37
 msgid "Daemon does not exist."
+msgstr ""
+
+#: lib/Cron/Workers/SendingQueue/Migration.php:57
+msgid ""
+"Your sending queue data is being migrated to allow better performance, "
+"sending is paused while the migration is in progress and will resume "
+"automatically upon completion. This may take a few minutes."
 msgstr ""
 
 #: lib/Cron/Workers/SendingQueue/Tasks/Newsletter.php:175
@@ -1314,17 +1321,17 @@ msgstr ""
 msgid "Please specify a name."
 msgstr ""
 
-#: lib/Models/CustomField.php:23 lib/Models/Newsletter.php:28
+#: lib/Models/CustomField.php:23 lib/Models/Newsletter.php:29
 #: views/form/templates/settings/field_form.hbs:16
 msgid "Please specify a type."
 msgstr ""
 
-#: lib/Models/Form.php:93 lib/Models/Newsletter.php:645
+#: lib/Models/Form.php:93 lib/Models/Newsletter.php:704
 #: lib/Models/Segment.php:133 lib/Models/Subscriber.php:332
 msgid "All"
 msgstr ""
 
-#: lib/Models/Form.php:98 lib/Models/Newsletter.php:715
+#: lib/Models/Form.php:98 lib/Models/Newsletter.php:774
 #: lib/Models/Segment.php:138 lib/Models/Subscriber.php:357 views/forms.html:66
 #: views/newsletters.html:82 views/segments.html:50
 #: views/subscribers/subscribers.html:37
@@ -1336,37 +1343,37 @@ msgstr ""
 msgid "Another record already exists. Please specify a different \"%1$s\"."
 msgstr ""
 
-#: lib/Models/Newsletter.php:396
+#: lib/Models/Newsletter.php:461
 msgid "Deleted list"
 msgstr ""
 
-#: lib/Models/Newsletter.php:546 lib/Models/Subscriber.php:268
+#: lib/Models/Newsletter.php:605 lib/Models/Subscriber.php:268
 msgid "All Lists"
 msgstr ""
 
-#: lib/Models/Newsletter.php:657
+#: lib/Models/Newsletter.php:716
 #: views/newsletter/templates/blocks/posts/settingsSelection.hbs:12
 msgid "Draft"
 msgstr ""
 
-#: lib/Models/Newsletter.php:665
+#: lib/Models/Newsletter.php:724
 #: views/newsletter/templates/blocks/posts/settingsSelection.hbs:11
 msgid "Scheduled"
 msgstr ""
 
-#: lib/Models/Newsletter.php:673
+#: lib/Models/Newsletter.php:732
 msgid "Sending"
 msgstr ""
 
-#: lib/Models/Newsletter.php:681
+#: lib/Models/Newsletter.php:740
 msgid "Sent"
 msgstr ""
 
-#: lib/Models/Newsletter.php:695 views/newsletters.html:90
+#: lib/Models/Newsletter.php:754 views/newsletters.html:90
 msgid "Active"
 msgstr ""
 
-#: lib/Models/Newsletter.php:703
+#: lib/Models/Newsletter.php:762
 msgid "Not active"
 msgstr ""
 
@@ -1390,7 +1397,7 @@ msgstr ""
 msgid "Not in a List"
 msgstr ""
 
-#: lib/Models/SendingQueue.php:22
+#: lib/Models/SendingQueue.php:23
 msgid "Rendered newsletter body is invalid!"
 msgstr ""
 
@@ -1534,7 +1541,7 @@ msgid "Unsubscribe link"
 msgstr ""
 
 #: lib/Newsletter/Shortcodes/ShortcodesHelper.php:85
-#: views/newsletter/editor.html:1056
+#: views/newsletter/editor.html:1058
 msgid "Unsubscribe"
 msgstr ""
 
@@ -1543,7 +1550,7 @@ msgid "Edit subscription page link"
 msgstr ""
 
 #: lib/Newsletter/Shortcodes/ShortcodesHelper.php:93
-#: views/newsletter/editor.html:1056
+#: views/newsletter/editor.html:1058
 msgid "Manage subscription"
 msgstr ""
 
@@ -2699,11 +2706,11 @@ msgid "Custom"
 msgstr ""
 
 #: views/newsletter/editor.html:980 views/newsletter/editor.html:982
-#: views/newsletter/editor.html:1102 views/newsletter/editor.html:1104
+#: views/newsletter/editor.html:1104 views/newsletter/editor.html:1106
 msgid "Read more"
 msgstr ""
 
-#: views/newsletter/editor.html:1018
+#: views/newsletter/editor.html:1020
 #: views/newsletter/templates/blocks/automatedLatestContent/settings.hbs:243
 #: views/newsletter/templates/blocks/button/settings.hbs:1
 #: views/newsletter/templates/blocks/button/widget.hbs:4
@@ -2711,31 +2718,31 @@ msgstr ""
 msgid "Button"
 msgstr ""
 
-#: views/newsletter/editor.html:1056
+#: views/newsletter/editor.html:1058
 msgid "Add your postal address here!"
 msgstr ""
 
-#: views/newsletter/editor.html:1076
+#: views/newsletter/editor.html:1078
 msgid "An image of..."
 msgstr ""
 
-#: views/newsletter/editor.html:1151
+#: views/newsletter/editor.html:1155
 msgid "Facebook"
 msgstr ""
 
-#: views/newsletter/editor.html:1162
+#: views/newsletter/editor.html:1166
 msgid "Twitter"
 msgstr ""
 
-#: views/newsletter/editor.html:1175
+#: views/newsletter/editor.html:1179
 msgid "Edit this to insert text."
 msgstr ""
 
-#: views/newsletter/editor.html:1178
+#: views/newsletter/editor.html:1182
 msgid "Display problems?"
 msgstr ""
 
-#: views/newsletter/editor.html:1179
+#: views/newsletter/editor.html:1183
 msgid "Open this email in your web browser."
 msgstr ""
 
@@ -3953,23 +3960,27 @@ msgstr ""
 msgid "Your saved templates"
 msgstr ""
 
-#: views/newsletters.html:277
+#: views/newsletters.html:274
+msgid "Template preview"
+msgstr ""
+
+#: views/newsletters.html:278
 msgid "This category does not contain any template yet!"
 msgstr ""
 
-#: views/newsletters.html:279
+#: views/newsletters.html:280
 msgid "Soon"
 msgstr ""
 
-#: views/newsletters.html:280
+#: views/newsletters.html:281
 msgid "Beta"
 msgstr ""
 
-#: views/newsletters.html:281
+#: views/newsletters.html:282
 msgid "An error occured while saving the template in \"Recently sent\""
 msgstr ""
 
-#: views/newsletters.html:282
+#: views/newsletters.html:283
 msgid "Select %1s events"
 msgstr ""
 
@@ -5493,22 +5504,22 @@ msgctxt "Error code (inside parentheses)"
 msgid "code: %s"
 msgstr ""
 
-#: lib/Config/Menu.php:99
+#: lib/Config/Menu.php:100
 msgctxt "newsletters per page (screen options)"
 msgid "Number of newsletters per page"
 msgstr ""
 
-#: lib/Config/Menu.php:137
+#: lib/Config/Menu.php:138
 msgctxt "forms per page (screen options)"
 msgid "Number of forms per page"
 msgstr ""
 
-#: lib/Config/Menu.php:175
+#: lib/Config/Menu.php:176
 msgctxt "subscribers per page (screen options)"
 msgid "Number of subscribers per page"
 msgstr ""
 
-#: lib/Config/Menu.php:226
+#: lib/Config/Menu.php:227
 msgctxt "segments per page (screen options)"
 msgid "Number of segments per page"
 msgstr ""
@@ -5596,17 +5607,17 @@ msgctxt "Saturday - one letter abbreviation"
 msgid "S"
 msgstr ""
 
-#: views/newsletters.html:274
+#: views/newsletters.html:275
 msgctxt "Blank newsletters templates category"
 msgid "Blank"
 msgstr ""
 
-#: views/newsletters.html:275
+#: views/newsletters.html:276
 msgctxt "Sample newsletters templates category"
 msgid "Sample"
 msgstr ""
 
-#: views/newsletters.html:276
+#: views/newsletters.html:277
 msgctxt "Importing template tab title"
 msgid "Import"
 msgstr ""

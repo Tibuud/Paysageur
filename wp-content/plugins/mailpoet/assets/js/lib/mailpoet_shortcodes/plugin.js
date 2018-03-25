@@ -8,33 +8,35 @@
  * its placeholder into editor text.
  */
 
-/*jshint unused:false */
-/*global tinymce:true */
-tinymce.PluginManager.add('mailpoet_shortcodes', function(editor, url) {
-  var appendLabelAndClose = function(shortcode) {
-      editor.insertContent(shortcode);
-      editor.windowManager.close();
-    },
-    generateOnClickFunc = function(shortcode) {
-      return function() {
-        appendLabelAndClose(shortcode);
-      };
+/* jshint unused:false */
+/* global tinymce:true */
+tinymce.PluginManager.add('mailpoet_shortcodes', function (editor) { // eslint-disable-line func-names
+  var appendLabelAndClose = function (shortcode) { // eslint-disable-line func-names
+    editor.insertContent(shortcode);
+    editor.windowManager.close();
+  };
+  var generateOnClickFunc = function (shortcode) { // eslint-disable-line func-names
+    return function () { // eslint-disable-line func-names
+      appendLabelAndClose(shortcode);
     };
+  };
 
   editor.addButton('mailpoet_shortcodes', {
     icon: 'mailpoet_shortcodes',
-    onclick: function() {
-      var shortcodes = [],
-        configShortcodes = editor.settings.mailpoet_shortcodes;
+    onclick: function () { // eslint-disable-line func-names
+      var shortcodes = [];
+      var configShortcodes = editor.settings.mailpoet_shortcodes;
+      var segment;
+      var i;
 
-      for (var segment in configShortcodes) {
+      for (segment in configShortcodes) {
         if (configShortcodes.hasOwnProperty(segment)) {
           shortcodes.push({
             type: 'label',
             text: segment
           });
 
-          for (var i = 0; i < configShortcodes[segment].length; i += 1) {
+          for (i = 0; i < configShortcodes[segment].length; i += 1) {
             shortcodes.push({
               type: 'button',
               text: configShortcodes[segment][i].text,
