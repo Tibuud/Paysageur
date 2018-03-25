@@ -147,7 +147,19 @@ function paysageur_scripts()
 }
 add_action('wp_enqueue_scripts', 'paysageur_scripts');
 
+/**
+ * Custom template tags for this theme.
+ */
+require get_template_directory() . '/inc/template-tags.php';
 
+/**
+ * Functions which enhance the theme by hooking into WordPress.
+ */
+require get_template_directory() . '/inc/template-functions.php';
+
+/**
+ * Load WooCommerce compatibility file.
+ */
 if (class_exists('WooCommerce')) {
     require get_template_directory() . '/inc/woocommerce.php';
 }
