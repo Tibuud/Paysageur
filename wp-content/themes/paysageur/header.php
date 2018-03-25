@@ -44,26 +44,32 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto d-lg-flex d-block flex-row mx-lg-auto mx-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php bloginfo('url'); ?>">Accueil</a>
+                            <a class="nav-link" href="<?php bloginfo('url'); ?>">
+							<?php
+                            $fr_en = ['Accueil', 'Home'];
+                            do_action('tb_auto_traduction', $fr_en);
+                            ?>
+							</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Numéro
+								<?php
+                                $fr_en = ['Numéro', 'Numero'];
+                                do_action('tb_auto_traduction', $fr_en);
+                                ?>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<?php
                                 $args = array('post_type' => 'revue');
-                                        // The Query
+
                                         $the_query = new WP_Query($args);
 
-                                        // The Loop
                                         if ($the_query->have_posts()) {
                                             while ($the_query->have_posts()) {
                                                 $the_query->the_post(); ?>
 												<a class="dropdown-item" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 											<?php
                                             }
-
                                             wp_reset_postdata();
                                         } ?>
 
