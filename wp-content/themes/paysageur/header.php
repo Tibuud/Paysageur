@@ -79,6 +79,11 @@
                     <ul class="pull-right navbar-nav">
                         <li class="nav-item active">
                             <a class="nav-link" href="<?php echo get_permalink(7); ?>"><i class="fas fa-shopping-basket"></i></a>
+							<?php
+                                if (function_exists('paysageur_woocommerce_header_cart')) {
+                                    paysageur_woocommerce_header_cart();
+                                }
+                            ?>
                         </li>
 						<nav id="site-navigation" class="main-navigation">
 

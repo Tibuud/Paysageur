@@ -215,14 +215,5 @@ do_action('tb_auto_traduction', $fr_en); ?></p>
 </main>
 
 <?php
-    if (function_exists('paysageur_woocommerce_header_cart')) {
-        paysageur_woocommerce_header_cart();
-    }
-?>
-
-
-
-
-<?php
 
 get_footer();

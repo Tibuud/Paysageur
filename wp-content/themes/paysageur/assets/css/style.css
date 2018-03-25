@@ -38,6 +38,10 @@ h1 {
     color: black;
 }
 
+.btn a {
+    color: white;
+}
+
 .btn {
     background-color: black;
     border-color: black;
@@ -55,6 +59,45 @@ h1 {
 }
 
 /****WOOCOMMERCE ******/
+
+
+/*Bouton panier */
+
+.current-menu-item {
+    position: relative;
+}
+
+.cart-contents {
+    position: absolute;
+    left:-30px;
+    top:0px;
+    font-size: 0.8rem;
+    color: white;
+    background-color: red;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    border-color: red;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    transition: all 0.5s ease;
+}
+
+.cart-contents:hover {
+    color: white;
+    background-color: #DEDEDE;
+}
+
+
+.current-menu-item span {
+    position: absolute;
+    top: -0.1rem;
+    left: 0.3125rem;
+}
+
+/*Fin du bouton panier*/
 
 .add-to-card {
     color: white;
