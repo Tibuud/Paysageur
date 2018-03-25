@@ -7,14 +7,29 @@ get_header(); ?>
 <main class="container-fluid conteneur-principal">
         <section class='sous-menu navbar navbar-expand-lg navbar-light'>
                 <div  id='hook-edition' class="d-flex justify-content-around">
-                   <a class='' href="#hook-produits">Produits</a>
-                   <a class='' href="#hook-points_de_vente">Points de Vente</a>
+                   <a class='' href="#hook-produits">
+                       <?php
+                       $fr_en = ['Produits', ' Products'];
+                       do_action('tb_auto_traduction', $fr_en);
+                       ?>
+                   </a>
+                   <a class='' href="#hook-points_de_vente">
+                       <?php
+                       $fr_en = ['Points de Vente', ' Sales Location'];
+                       do_action('tb_auto_traduction', $fr_en);
+                       ?>
+                   </a>
 
                </div>
 
         </section>
         <section class='produits-page-boutique'> <!-- debut section produit de la page revue -->
-            <h3 id='hook-produits'>Produits</h3>
+            <h3 id='hook-produits'>
+                <?php
+                $fr_en = ['Produits', ' Products'];
+                do_action('tb_auto_traduction', $fr_en);
+                ?>
+            </h3>
             <div class="text-center d-flex justify-content-around flex-wrap">
             <?php
             if (have_posts()) {
@@ -35,9 +50,13 @@ get_header(); ?>
             </div>
         </section> <!-- fin section produit de la page revue -->
         <section class='section_points-de-vente'>
-            <h3 id='hook-points_de_vente'>Points de vente</h3>
+            <h3 id='hook-points_de_vente'>
+                <?php
+                $fr_en = ['Points de Vente', ' Sales Location'];
+                do_action('tb_auto_traduction', $fr_en);
+                ?>
+			</h3>
 <?php
-
  $terms_pays = get_terms(array(
     'taxonomy' => 'pays',
     'orderby' => 'name',
