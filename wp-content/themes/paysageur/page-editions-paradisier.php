@@ -83,7 +83,7 @@ if (!empty($image)): ?>
         </div>
     </section> <!-- fin de section fondateur -->
     <section class='collaborateurs'> <!-- début de section collaborateurs -->
-        <h3 id='collaborateurs'><?php
+        <h3 id='hook-collaborateurs'><?php
         $fr_en = ['Collaborateurs', 'Collaborators'];
         do_action('tb_auto_traduction', $fr_en);
         ?></h3>

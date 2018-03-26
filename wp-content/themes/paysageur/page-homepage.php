@@ -2,7 +2,18 @@
 
 get_header(); ?>
 <main class="container-fluid conteneur-principal conteneur-homepage">
-	<section class='bg-principal'>
+
+	<?php
+
+    $image = get_field('image_bg');
+
+    if (!empty($image)): ?>
+
+		<section class='bg-principal' style="background-image: url(<?php echo $image['url']; ?>);">
+
+	<?php else: ?>
+		<section class='bg-principal'>
+	<?php endif; ?>
 		<h1 class="text-center"><?php echo get_bloginfo('name'); ?></h1>
 		<h2 class="text-center"><?php the_field('sous-titre') ?></h2>
 	</section>

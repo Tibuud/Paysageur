@@ -1,6 +1,6 @@
 <footer class="container-fluid">
 		<div class='row illu'>
-			<img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/css/img/grande_lande.png' ; ?>" alt="">
+			<img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/css/img/grande_lande.png' ; ?>" alt="Logo Paysageur">
 		</div>
 		<div class='row justify-content-around sous-illu'>
 			<div class="col-lg text-center">

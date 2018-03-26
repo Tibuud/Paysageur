@@ -177,6 +177,12 @@ footer {
     background-color: black;
     color: white;
 }
+
+#marcheur-footer {
+    position: relative;
+    left: 50%;
+}
+
 .mailpoet_paragraph {
     display: inline-block;
 }
@@ -380,7 +386,7 @@ footer .row:last-child {
 
 .bg-principal h1 {
     padding-top: 30vh;
-    font-size: 3.8rem;
+    font-size: 3.5rem;
     font-style: italic;
     color: white;
 
@@ -391,6 +397,12 @@ footer .row:last-child {
     font-size: 2.25rem;
     font-family: 'garcia', sans-serif;
     color: white;
+}
+
+@media (min-width:768px) {
+    .bg-principal h1 {
+        font-size: 3.8rem;
+}
 }
 
 /*** manisfeste ***/
@@ -454,6 +466,7 @@ footer .row:last-child {
 }
 
 .decouverte {
+    text-align: center;
     margin-bottom: 5rem;
 }
 
@@ -532,7 +545,7 @@ footer .row:last-child {
     margin-bottom: 2.15rem;
 }
 .extraits img {
-    max-width: 28rem;
+    max-width: 70vw;
 }
 .extraits .extrait-1-img-1 {
     padding-top: 3.125rem;
@@ -562,6 +575,10 @@ footer .row:last-child {
 }
 
 @media (min-width:768px) {
+
+    .extraits img {
+        max-width: 28rem;
+    }
 
     .extraits{
         margin: 2.5rem 15vw 2.5rem 15vw;
@@ -688,7 +705,13 @@ footer .row:last-child {
 .resume-numero .col-md-3 {
     text-align: center;
     margin-top: 2.5rem;
+    padding-left: 0;
 }
+
+.resume-numero .col-md-3 ul {
+    padding-left: 0;
+}
+
 
 .resume-numero img {
     max-width: 11.25rem;
@@ -718,6 +741,7 @@ footer .row:last-child {
 
     .resume-numero .col-md-3 {
         margin-top: 0;
+        padding-left: 3rem;;
     }
 }
 
@@ -748,7 +772,7 @@ footer .row:last-child {
 }
 
 .contributeurs h3 {
-    margin-left: 10vw;
+
     width: 50vw;
     padding-bottom: 0.3rem;
     border-bottom: 2px solid black;
@@ -774,7 +798,7 @@ footer .row:last-child {
 @media (min-width:768px) {
 
     .contributeurs h3 {
-
+        margin-left: 10vw;
         width: 30vw;
 
     }
@@ -798,6 +822,10 @@ footer .row:last-child {
 .produits-page-numero .d-flex {
     margin-top: 4.5rem;
 
+}
+
+.produits-page-numero .d-flex ul {
+    padding-left: 0;
 }
 
 .produits-page-numero article h4 {
@@ -857,7 +885,7 @@ footer .row:last-child {
 
 .top-paradisier h1 {
     padding-top: 12vh;
-    padding-left: 15vw;
+    padding-left: 12vw;
     font-size: 4rem;
     color: white;
     text-transform: capitalize;
@@ -903,8 +931,8 @@ footer .row:last-child {
 }
 
 .fondateurs h3 {
-    margin-left: 10vw;
-    width: 50vw;
+    margin-left: 0;
+    width: 70vw;
     padding-bottom: 0.3rem;
     border-bottom: 2px solid black;
     font-weight: bold;
@@ -928,6 +956,11 @@ footer .row:last-child {
 
 @media (min-width:768px) {
 
+    .fondateurs h3 {
+        margin-left: 10vw;
+        width: 30vw;
+    }
+
     .fondateurs article {
 
         width: 35vw;
@@ -942,7 +975,7 @@ footer .row:last-child {
 }
 
 .collaborateurs h3 {
-    margin-left: 10vw;
+    margin-left: 0;
     width: 70vw;
     padding-bottom: 0.3rem;
     border-bottom: 2px solid black;
@@ -968,6 +1001,7 @@ footer .row:last-child {
 @media (min-width:768px) {
 
     .collaborateurs h3 {
+        margin-left: 10vw;
         width: 30vw;
     }
 }
