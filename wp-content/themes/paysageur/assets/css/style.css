@@ -715,9 +715,6 @@ footer .row:last-child {
 
 .resume-numero img {
     max-width: 11.25rem;
-    -webkit-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.61);
-    -moz-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.61);
-    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.61);
 }
 
 .resume-numero h2, .resume-numero h3 {
